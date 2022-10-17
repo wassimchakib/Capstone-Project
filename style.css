@@ -17,6 +17,12 @@ body {
 }
 
 /* header section  */
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
 
 .wrapper {
   width: 80%;
@@ -64,16 +70,23 @@ body {
 
 .main-nav .icon-nav {
   height: 72px;
+	display: none;
 }
 
 .main-nav .icon-nav img {
   height: 100%;
   object-fit: cover;
 }
+.main-nav .icon-menu-mobile {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
 
 .bottom-nav {
   list-style-type: none;
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   gap: 50px;
@@ -89,3 +102,4 @@ body {
   border: 5px solid var(--red-color);
   color: var(--red-color);
 }
+
