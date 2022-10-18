@@ -23,6 +23,7 @@
 
 .wrapper {
   width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -195,7 +196,8 @@
 .logo-title hr,
 .events-title hr {
   border: 1px solid var(--red-color);
-  width: 10%;
+  background-color: var(--red-color);
+  width: 26px;
 }
 
 .program-card {
@@ -242,15 +244,19 @@
   background-color: var(--red-color);
   font-size: 20px;
   cursor: pointer;
+  margin-bottom: 60px;
 }
 
 /* testimonials  */
 
 #testimonials {
+  padding-bottom: 50px;
+}
+
+.testimonial-container {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding-bottom: 50px;
 }
 
 .testimonial-title h2 {
@@ -328,6 +334,7 @@
 #partners {
   background-color: var(--black-color);
   padding: 16px 0 60px 0;
+  display: none;
 }
 
 .partner-title h2 {
@@ -356,7 +363,7 @@
 /* footer */
 
 #footer {
-  display: flex;
+  display: none;
   gap: 20px;
   justify-content: center;
   padding: 24px 0;
@@ -469,4 +476,79 @@
 
 #past-events div:nth-child(3) {
   background-image: linear-gradient(rgba(236, 82, 66, 0.4), rgba(236, 82, 66, 0.4)), url("images/event2.jpg");
+}
+
+/* desktop version */
+@media all and (min-width: 768px) {
+
+  /* header  */
+  .header-top {
+    display: block;
+  }
+
+  .main-nav .icon-nav, .main-nav .bottom-nav {
+    display: flex;
+  }
+
+  .main-nav .icon-menu-mobile {
+    display: none;
+  }
+
+  .header-main {
+    background-color: var(--white-color);
+  }
+
+  /* headline */
+
+  .headline-content {
+    padding-top: 68px;
+  }
+
+  /* program */
+
+  .program-content {
+    flex-direction: row;
+  }
+
+  .program-card {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  .card-icon {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .card-icon img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* testimonials  */
+
+  .testimonial-btn button {
+    display: none;
+  }
+
+  .testimonial-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .testimonial-card {
+    width: 40%;
+  }
+
+  /* partners  */
+  #partners {
+    display: block;
+  }
+
+  /* footer */
+  #footer {
+    display: flex;
+  }
 }
