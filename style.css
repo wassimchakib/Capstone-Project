@@ -562,7 +562,6 @@
   background-color: var(--black-color);
 }
 
-
 /* desktop version */
 @media all and (min-width: 768px) {
   /* home page  */
