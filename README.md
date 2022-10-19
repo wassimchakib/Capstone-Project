@@ -62,7 +62,7 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to anyone whose code was used
 - Learning to code is learning to create and innovate
-- Thank you [Cindy Shin](https://www.behance.net/adagio07) for the inspiration and the design 👏
+- Thank you [Cindy Shin](https://www.behance.net/adagio07) for the inspiration and the [design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) 👏
 
 ## 📝 License
 
