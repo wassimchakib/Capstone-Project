@@ -260,6 +260,7 @@
   justify-content: space-between;
   gap: 10px;
   line-height: 1.4em;
+  height: 100px;
 }
 
 .card-icon {
@@ -267,16 +268,17 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  width: 30%;
+  width: 40%;
+}
+
+.card-description {
+  width: 50%;
 }
 
 .program-card h3 {
   color: var(--red-color);
   white-space: normal;
-}
-
-.card-description {
-  width: 50%;
+  word-break: break-word;
 }
 
 .card-description p {
@@ -413,7 +415,7 @@
 }
 
 .partner-card .partner-logo {
-  width: 200px;
+  width: 150px;
 }
 
 .partner-card .partner-logo img {
@@ -523,12 +525,15 @@
   flex-direction: column;
   gap: 20px;
   background-color: var(--white-color);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .events-container .event-card {
   width: 100%;
   max-width: 400px;
-  height: 200px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -592,23 +597,31 @@
 
   .program-content {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .program-card {
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
+    width: 15%;
+    height: auto;
   }
 
   .card-icon {
     flex-direction: column;
     width: 100%;
-    height: auto;
+    height: 50%;
   }
 
   .card-icon img {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+  }
+
+  .card-description {
+    padding-top: 10px;
+    width: 100%;
   }
 
   /* testimonials  */
@@ -630,7 +643,7 @@
   .testimonial-container div:nth-child(4),
   .testimonial-container div:nth-child(5),
   .testimonial-container div:nth-child(6) {
-    display: flex;
+    display: flex !important;
   }
   /* partners  */
   #partners {
